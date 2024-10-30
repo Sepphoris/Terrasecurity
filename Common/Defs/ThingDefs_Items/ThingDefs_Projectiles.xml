@@ -273,7 +273,7 @@ Anima long range is brought down by 3
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseBullet"> <!--heavy SMG -->
+  <ThingDef ParentName="BaseBullet"> <!--Heavy SMG -->
     <defName>Bullet_PerrenialNeedle</defName>
     <label>perrenial needle</label>
     <graphicData>
@@ -283,8 +283,25 @@ Anima long range is brought down by 3
     </graphicData>
     <projectile>
       <damageDef>Cut</damageDef>
-      <damageAmountBase>5</damageAmountBase>
-      <speed>52</speed>
+      <damageAmountBase>4</damageAmountBase>
+      <armorPenetrationBase>0.22</armorPenetrationBase>
+      <speed>62</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet"> <!--Minigun -->
+    <defName>Bullet_PerrenialRifle</defName>
+    <label>perrenial needle</label>
+    <graphicData>
+      <texPath>Things/Projectile/TS_PerrenialNeedle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.4</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Cut</damageDef>
+      <damageAmountBase>4</damageAmountBase>
+      <armorPenetrationBase>0.22</armorPenetrationBase>
+      <speed>62</speed>
     </projectile>
   </ThingDef>
 </Defs>

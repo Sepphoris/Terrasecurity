@@ -7,7 +7,7 @@ At their matured form, they are given their maturity increases-->
 	<ThingDef ParentName="BaseEndosapTerraweapon">
 		<defName>TS_PrimaSMGEndosap</defName> <!--rename to PrimaSMGUpgraded in Rimworld 1.5-->
 		<label>prima endoshredder</label>
-		<description>The Apex form of the Prima Pincaster, infused with the Sap of Permanence. The presence of the endosap has enabled the pincaster to create a more durable epidermis, and decreasing flammability.</description>
+		<description>The Apex form of the Prima Pincaster, infused with Endosap. The presence of the endosap has enabled the pincaster to create a more durable epidermis, and decreasing flammability.</description>
 		<graphicData>
 			<texPath>Things/WeaponPrima/Endosap/PrimaSMGUpgraded_ES</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -115,7 +115,7 @@ At their matured form, they are given their maturity increases-->
 	<ThingDef ParentName="BaseEndosapTerraweapon">
 		<defName>TS_PrimaShotgunEndosap</defName> <!--Rename to PrimaShotgunUpgraded in 1.5-->
 		<label>prima endoburster</label>
-		<description>The matured form of the Prima Spreadshot, infused with the Sap of Permanence. The presence of the endosap has enabled the pincaster to create a more durable epidermis, and decreasing flammability.</description>
+		<description>The matured form of the Prima Spreadshot, infused with the Endosap. The presence of the endosap has enabled the pincaster to create a more durable epidermis, and decreasing flammability.</description>
 		<graphicData>
 			<texPath>Things/WeaponPrima/Endosap/PrimaShotgunUpgraded_ES</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -196,7 +196,7 @@ At their matured form, they are given their maturity increases-->
 	<ThingDef ParentName="BaseEndosapTerraweapon">
 		<defName>TS_PrimaTwincasterEndosap</defName>
 		<label>Twincaster</label>
-		<description>The second-generation form of the Prima Stakecaster, infused with the sap of Permanence. The presence of the sap has enabled the pincaster to create a more durable epidermis, alongside noticeably boosting it's lifespan.
+		<description>The second-generation form of the Prima Stakecaster, infused with Endosap. The presence of the sap has enabled the pincaster to create a more durable epidermis, alongside noticeably boosting it's lifespan.
 \nUnfortunately the sap has also neutralized the Twincaster's growth potential, preventing it from being evolved further.</description>
 		<graphicData>
 			<texPath>Things/WeaponPrima/Endosap/PrimaCrossbowUpgraded_ES</texPath>

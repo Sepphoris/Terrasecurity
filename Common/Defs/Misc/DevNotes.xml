@@ -199,7 +199,7 @@ Archwood: 2000
 
 		-Deepsap: Can be planted on any growable terrain to quickly regrow the weapon (90% grow time decrease) (light blue) - Rare
 		-Hemsap/Toxsap: projectiles inflict slight poison (light purple) - Rare
-		-Sunsap: 50% longer lifespan and 15 HP/day persistent health regen (golden) - Rare
+		-Sunsap/Brightsap: 50% longer lifespan and 15 HP/day persistent health regen (golden) - Rare
 
 		-Archsap: weapon will never expire (royal purple) - Ultra Rare
 
@@ -253,13 +253,13 @@ Archwood: 2000
 		CAULDRON/FILTER (RNG-BASED):
 			BLOOMROT WEAPON: Created from Bloomrot Mass
 			ENDOSAP: Created from x150 Glowsap
-			SUNSAP: Created from x150 Glowsap
+			BRIGHTSAP: Created from x150 Glowsap
 			HYPERSAP: Created from x150 Glowsap
 
 		TERRAVAT (TIME-BASED):
 			MATURED WEAPONS: Created from immature weapon + Glowsap
 			ENDOSAP WEAPONS: Created from immature weapon + Endosap
-			REVITALIZED WEAPONS: Created from any weapon + Sunsap
+			REVITALIZED WEAPONS: Created from any weapon + Brightsap
 			HYPERSAP WEAPONS: Created from immature weapon + Hypersap
 			ARCHSAP WEAPONS: Created from immature weapon + Archsap
 			SCOPED WEAPONS: Created from mid-range+ weapons + molten Terracrystals

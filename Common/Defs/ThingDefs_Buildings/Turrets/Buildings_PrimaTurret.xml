@@ -121,6 +121,7 @@
       <WoodLog>4</WoodLog>
     </killedLeavings>
     <building>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
       <claimable>true</claimable>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>TS_PrimaTurretSpearGun</turretGunDef>
@@ -260,6 +261,7 @@
       <WoodLog>4</WoodLog>
     </killedLeavings>
     <building>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
       <claimable>true</claimable>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>TS_PrimaTurretSMGGun</turretGunDef>
@@ -393,6 +395,7 @@
       <WoodLog>4</WoodLog>
     </killedLeavings>
     <building>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
       <claimable>true</claimable>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>TS_PrimaTurretShotgunGun</turretGunDef>

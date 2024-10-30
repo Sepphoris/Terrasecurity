@@ -25,7 +25,7 @@
 
 	<ThingDef ParentName="BaseWeapon">
 		<defName>TS_PrimaKnife</defName>
-		<label>terraknife</label>
+		<label>Prima terraknife</label>
 		<description>A biotic curved dagger. One of the weakest terraweapons, but extremely quick to attack with, and to grow.</description>
 		<graphicData>
 			<texPath>Things/WeaponMelee/TS_Dagger</texPath>

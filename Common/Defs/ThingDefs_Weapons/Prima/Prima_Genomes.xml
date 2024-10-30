@@ -15,7 +15,7 @@
 		-Deepsap: Can be planted on any growable terrain to quickly regrow the weapon (90% grow time decrease) (light blue) - Rare
 			-This includes mature weapons. After being planted, the sap will default to normal sap.
 		-Hemsap/Toxsap: projectiles inflict slight poison (light purple) - Rare
-		-Sunsap: 50% longer lifespan and 15 HP/day persistent health regen (golden). - Rare
+		-Sunsap/Brightsap: 50% longer lifespan and 15 HP/day persistent health regen (golden). - Rare
 			-Also the only sap that can act as a fuel source for specific defs, i.e. turrets.
 		-Surgesap: weapon unlocks a new, powerful fire mode that can be used sparingly. Second fire mode varies on the weapon, generally dependent on the weapon's main fire method. - Rare
 
@@ -287,16 +287,16 @@ Increased range | Faster fire rate</inspectString>
 	</ThingDef>
 
 
-<!--=====Sunsap=====-->
+<!--=====Brightsap=====-->
 
 
-	<ThingDef Name="BaseSunsapTerraweapon" Abstract="True" ParentName="BaseGun">
+	<ThingDef Name="BaseBrightsapTerraweapon" Abstract="True" ParentName="BaseGun">
    <comps>
 		<li Class="CompProperties_SelfhealHitpoints">
       <ticksPerHeal>3000</ticksPerHeal> <!-- 6k ticks = 10hp/day, 12k ticks = 5hp/day, 24k ticks = 2.5hp/day -->
     </li>
     <li Class="CompProperties_InspectString">
-      <inspectString>Sunsap Genome | Immutable
+      <inspectString>Brightsap Genome | Immutable
 +50% lifetime days | +15 hp/day (unequipped)</inspectString>
       </li>
     </comps>
@@ -304,13 +304,13 @@ Increased range | Faster fire rate</inspectString>
 
 
 
-	<ThingDef Name="UpgradedSunsapTerraweapon" Abstract="True" ParentName="BaseGun">
+	<ThingDef Name="UpgradedBrightsapTerraweapon" Abstract="True" ParentName="BaseGun">
    <comps>
 		<li Class="CompProperties_SelfhealHitpoints">
       <ticksPerHeal>3000</ticksPerHeal> <!-- 6k ticks = 10hp/day, 12k ticks = 5hp/day, 24k ticks = 2.5hp/day -->
     </li>
     <li Class="CompProperties_InspectString">
-      <inspectString>Sunsap Genome | Matured
+      <inspectString>Brightsap Genome | Matured
 +25% lifetime days| +15 hp/day (unequipped)</inspectString>
       </li>
     </comps>

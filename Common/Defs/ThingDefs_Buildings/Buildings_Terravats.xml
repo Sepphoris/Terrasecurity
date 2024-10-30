@@ -10,7 +10,7 @@
   ENDOSAP/SAP OF PERMANENCE:
     Used for improving durability and lifespan
 
-  SUNSAP/SAP OF VIVICATION:
+  SUNSAP/BRIGHTSAP/SAP OF VIVICATION:
     Used for revitalizing any weapon
 
   HYPERSAP/SAP OF DISORDER:
@@ -152,17 +152,17 @@
             </extraGraphicDataIfTransforming>
           </li>
           <li>
-            <fuelThingDef>TS_Sunsap</fuelThingDef>
+            <fuelThingDef>TS_Brightsap</fuelThingDef>
             <!-- these graphics can be omitted without breaking anything. -->
             <extraGraphicDataIfNotTransforming>
-              <texPath>Things/Building/Terravats/SmallVat/Sunsap</texPath>
+              <texPath>Things/Building/Terravats/SmallVat/Brightsap</texPath>
               <graphicClass>Graphic_Random</graphicClass>
               <drawSize>(1.8,1.8)</drawSize>
               <drawOffset>(0,1,0.3)</drawOffset>
               <!-- extra graphics need a TINY amount of Y offset to be drawn on top of the original thing -->
             </extraGraphicDataIfNotTransforming>
             <extraGraphicDataIfTransforming>
-              <texPath>Things/Building/Terravats/SmallVat/Sunsap</texPath>
+              <texPath>Things/Building/Terravats/SmallVat/Brightsap</texPath>
               <graphicClass>Graphic_Random</graphicClass>
               <drawSize>(1.8,1.8)</drawSize>
               <drawOffset>(0, 1, 0.3)</drawOffset>

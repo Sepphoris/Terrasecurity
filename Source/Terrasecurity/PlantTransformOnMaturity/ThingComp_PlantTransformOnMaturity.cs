@@ -32,7 +32,9 @@ namespace Terrasecurity
         private void Transform()
         {
             Map map = parent.Map;
-            Faction faction = parent.Faction;
+            Faction faction = Faction.OfPlayer;
+            // Plants don't have factions assigned to them, but we can assume the plant is from the player
+            // if the plant is at a growing zone or on a building that supports growing (hydroponics)
             parent.Destroy(DestroyMode.WillReplace);
             Thing thingToSpawn = Props.MakeThing();
             thingToSpawn.SetFaction(faction);

@@ -87,7 +87,7 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>TS_Terraforge</defName>
-    <label>Terraforge</label>
+    <label>Elderwood Terraforge</label>
     <description>A grown building that channels natural energies of the world, allowing you to shape existing Terratech, or grow new Terratech formations.
 Some Terratech creations may have features that simply make the product unusable, or even dangerous, to most races (generally to ward off undeserving colonies). The Terraforge exists to refine that Terratech into a usable state - not by destruction, by rather by letting the creation know that it is in safe hands.</description>
     <thingClass>Building_WorkTable</thingClass>
@@ -147,6 +147,8 @@ Some Terratech creations may have features that simply make the product unusable
       <li>TS_BuildingTreeSeedRecipe</li>
       <li>TS_SapTreeSeedRecipe</li>
       <li>TS_SentinelTreeSeedRecipe</li>
+      <li>TS_BrightsapLampSeedRecipe</li>
+      <li>TS_BrightsapColumnSeedRecipe</li>
       <li>TS_SapFilterSeedRecipe</li>
       <li>TS_TerraforgeSeedRecipe</li>
       <li>TS_PrimaTurretSeedApexToStake</li>

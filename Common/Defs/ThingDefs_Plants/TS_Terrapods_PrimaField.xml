@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!--Pods should follow the following skill rules:
+  <!--Pods should follow the following skill rules:
 Tier 1 weapons: 1-4
 Tier 1 heavy: 5-7
 Tier 1 upgrades: 6-8
@@ -23,7 +23,7 @@ Tier 4 upgrades: 20
 Tier 4 surge seeds: 20
 -->
 
-<!--Melee Weapons-->
+  <!--Melee Weapons-->
 
   <ThingDef Name="TS_WeaponPodBase" ParentName="PlantBaseNonEdible" Abstract="True">
     <graphicData>
@@ -64,6 +64,165 @@ Tier 4 surge seeds: 20
     </plant>
   </ThingDef>
 
+
+  <ThingDef ParentName="TS_WeaponPodBase">
+    <defName>TS_PrimaPod_Random</defName>
+    <graphicData>
+      <texPath>Things/Plant/PrimaPodRandom</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <label>Pure Terrapod</label>
+    <description>A Terrapod that produces Prima weapons, simple enough to quickly sow within a field with the proper knowledge. While requiring highly fertile soil, it is easy to plant and grows relatively quickly.
+\n\nThis Terrapod grows multiple seeds, but these seeds fight over nutrients, resulting in the production of one - rarely two - random Terraweapons. The rest of the seeds simply turn to mush.</description>
+    <descriptionHyperlinks>
+      <ThingDef>TS_OverviewPrimaWeapons</ThingDef>
+    </descriptionHyperlinks>
+    <plant>
+      <showGrowthInInspectPane>false</showGrowthInInspectPane>
+      <harvestMinGrowth>1</harvestMinGrowth>
+      <lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+      <fertilityMin>0.7</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+      <wildClusterWeight>0</wildClusterWeight>
+      <harvestYield>0</harvestYield>
+      <sowMinSkill>4</sowMinSkill>
+      <growDays>12</growDays>
+      <harvestWork>300</harvestWork>
+      <sowResearchPrerequisites>
+        <li>TS_PrimaTerraweaponSeeds</li>
+      </sowResearchPrerequisites>
+      <immatureGraphicPath>Things/Plant/PrimaPodRandom</immatureGraphicPath>
+    </plant>
+    <comps>
+      <li Class="Terrasecurity.ThingCompProperties_CyclicThingSpawner">
+        <compClass>Terrasecurity.ThingComp_CyclicThingSpawner</compClass>
+        <cycleDurationRangeTicks>180000~270000</cycleDurationRangeTicks>        <!--6 to 9 days-->
+        <showNotificationWhenSpawningThings>true</showNotificationWhenSpawningThings>
+        <potentialSpawnedThings>
+          <!--Melee weapons-->
+          <li>
+            <weight>1</weight>
+            <things>
+              <TS_PrimaKnife>1</TS_PrimaKnife>
+            </things>
+          </li>
+          <li>
+            <weight>1</weight>
+            <things>
+              <TS_PrimaMace>1</TS_PrimaMace>
+            </things>
+          </li>
+          <li>
+            <weight>1</weight>
+            <things>
+              <TS_PrimaSword>1</TS_PrimaSword>
+            </things>
+          </li>
+          <!--Light weapons-->
+          <li>
+            <weight>1</weight>
+            <things>
+              <TS_StakeCaster>1</TS_StakeCaster>
+            </things>
+          </li>
+          <li>
+            <weight>1</weight>
+            <things>
+              <TS_Pistol>1</TS_Pistol>
+            </things>
+          </li>
+          <li>
+            <weight>1</weight>
+            <things>
+              <TS_SMG>1</TS_SMG>
+            </things>
+          </li>
+          <!--Medium weapons-->
+          <li>
+            <weight>0.5</weight>
+            <things>
+              <TS_Shotgun>1</TS_Shotgun>
+            </things>
+          </li>
+          <li>
+            <weight>0.5</weight>
+            <things>
+              <TS_Carbine>1</TS_Carbine>
+            </things>
+          </li>
+          <li>
+            <weight>0.5</weight>
+            <things>
+              <TS_Rifle>1</TS_Rifle>
+            </things>
+          </li>
+          <!--Heavy weapons-->
+          <li>
+            <weight>0.25</weight>
+            <things>
+              <TS_Seedburster>1</TS_Seedburster>
+            </things>
+          </li>
+          <li>
+            <weight>0.25</weight>
+            <things>
+              <TS_Hailcannon>1</TS_Hailcannon>
+            </things>
+          </li>
+          <li>
+            <weight>0.25</weight>
+            <things>
+              <TS_AcidLauncher>1</TS_AcidLauncher>
+            </things>
+          </li>
+          <li>
+            <weight>0.25</weight>
+            <things>
+              <TS_LMG>1</TS_LMG>
+            </things>
+          </li>
+          <!--Double drops-->
+          <li>
+            <weight>0.5</weight>
+            <things>
+              <TS_StakeCaster>1</TS_StakeCaster>
+              <TS_PrimaMace>1</TS_PrimaMace>
+            </things>
+          </li>
+          <li>
+            <weight>0.5</weight>
+            <things>
+              <TS_SMG>1</TS_SMG>
+              <TS_PrimaKnife>1</TS_PrimaKnife>
+            </things>
+          </li>
+          <li>
+            <weight>0.5</weight>
+            <things>
+              <TS_Pistol>1</TS_Pistol>
+              <TS_PrimaSword>1</TS_PrimaSword>
+            </things>
+          </li>
+        </potentialSpawnedThings>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>9</glowRadius>
+        <glowColor>(237,211,78,0)</glowColor>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>2000</ticksPerHeal>        <!-- 30 hp per day, must be a multiple of 2000, since plants have Long ticker -->
+      </li>
+      <li Class="CompProperties_Lifespan">
+        <lifespanTicks>272000</lifespanTicks>        <!--2000 ticks after the latest spawning time, to ensure spawning happens.-->
+      </li>
+      <li Class="CompProperties_InspectString">
+        <inspectString>Expires shortly after creating product</inspectString>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!--Melee weapons-->
+
   <ThingDef ParentName="TS_WeaponPodBase">
     <defName>TS_WeaponPod_Knife</defName>
     <label>Terrapod: Knife</label>
@@ -74,7 +233,7 @@ Tier 4 surge seeds: 20
     <plant>
       <harvestedThingDef>TS_PrimaKnife</harvestedThingDef>
       <sowMinSkill>1</sowMinSkill>
-      <growDays>4</growDays>
+      <growDays>2</growDays>
       <harvestWork>300</harvestWork>
       <sowResearchPrerequisites>
         <li>TS_FundamentalArms</li>
@@ -89,7 +248,7 @@ Tier 4 surge seeds: 20
     <plant>
       <harvestedThingDef>TS_PrimaSword</harvestedThingDef>
       <sowMinSkill>2</sowMinSkill>
-      <growDays>5</growDays>
+      <growDays>2.5</growDays>
       <harvestWork>300</harvestWork>
       <sowResearchPrerequisites>
         <li>TS_FundamentalArms</li>
@@ -104,7 +263,7 @@ Tier 4 surge seeds: 20
     <plant>
       <harvestedThingDef>TS_PrimaMace</harvestedThingDef>
       <sowMinSkill>2</sowMinSkill>
-      <growDays>5</growDays>
+      <growDays>2.5</growDays>
       <harvestWork>300</harvestWork>
       <sowResearchPrerequisites>
         <li>TS_FundamentalArms</li>
@@ -112,21 +271,7 @@ Tier 4 surge seeds: 20
     </plant>
   </ThingDef>
 
-  <ThingDef ParentName="TS_WeaponPodBase">
-    <defName>TS_WeaponPod_StakeCaster</defName>
-    <label>Terrapod: Stakecaster</label>
-    <description>A plant pod that will slowly grow a biotic stakecaster. Requires highly fertile terrain.</description>
-    <plant>
-      <harvestedThingDef>TS_StakeCaster</harvestedThingDef>
-      <sowMinSkill>4</sowMinSkill>
-      <growDays>7</growDays>
-      <sowResearchPrerequisites>
-        <li>TS_FundamentalArms</li>
-      </sowResearchPrerequisites>
-    </plant>
-  </ThingDef>
-
-<!--Light Weapons-->
+  <!--Light weapons-->
 
   <ThingDef ParentName="TS_WeaponPodBase">
     <defName>TS_WeaponPod_Pistol</defName>
@@ -135,8 +280,8 @@ Tier 4 surge seeds: 20
     <plant>
       <harvestedThingDef>TS_Pistol</harvestedThingDef>
       <sowMinSkill>3</sowMinSkill>
-      <growDays>6</growDays>
-      <harvestWork>450</harvestWork>
+      <growDays>5</growDays>
+      <harvestWork>300</harvestWork>
       <sowResearchPrerequisites>
         <li>TS_BasicFirearms</li>
       </sowResearchPrerequisites>
@@ -150,7 +295,22 @@ Tier 4 surge seeds: 20
     <plant>
       <harvestedThingDef>TS_SMG</harvestedThingDef>
       <sowMinSkill>3</sowMinSkill>
-      <growDays>6</growDays>
+      <growDays>5</growDays>
+      <harvestWork>300</harvestWork>
+      <sowResearchPrerequisites>
+        <li>TS_BasicFirearms</li>
+      </sowResearchPrerequisites>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="TS_WeaponPodBase">
+    <defName>TS_WeaponPod_StakeCaster</defName>
+    <label>Terrapod: Stakecaster</label>
+    <description>A plant pod that will slowly grow a biotic stakecaster. Requires highly fertile terrain.</description>
+    <plant>
+      <harvestedThingDef>TS_StakeCaster</harvestedThingDef>
+      <sowMinSkill>4</sowMinSkill>
+      <growDays>7</growDays>
       <harvestWork>450</harvestWork>
       <sowResearchPrerequisites>
         <li>TS_BasicFirearms</li>
@@ -158,7 +318,7 @@ Tier 4 surge seeds: 20
     </plant>
   </ThingDef>
 
-<!--Standard arms-->
+  <!--Standard arms-->
 
   <ThingDef ParentName="TS_WeaponPodBase">
     <defName>TS_WeaponPod_Shotgun</defName>
@@ -205,7 +365,7 @@ Tier 4 surge seeds: 20
     </plant>
   </ThingDef>
 
-<!--Heavy Weapons-->
+  <!--Heavy Weapons-->
 
   <ThingDef ParentName="TS_WeaponPodBase">
     <defName>TS_WeaponPod_LMG</defName>

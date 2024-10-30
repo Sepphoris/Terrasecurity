@@ -63,7 +63,7 @@
           <li>
             <weight>1</weight>
             <things>
-                <TS_Sunsap>1</TS_Sunsap>
+                <TS_Brightsap>1</TS_Brightsap>
             </things>
           </li>
           <li>
@@ -81,7 +81,7 @@
           <li>
             <weight>0.3</weight>
             <things>
-              <TS_Sunsap>2~3</TS_Sunsap>
+              <TS_Brightsap>2~3</TS_Brightsap>
             </things>
           </li>
         </potentialSpawnedThings>

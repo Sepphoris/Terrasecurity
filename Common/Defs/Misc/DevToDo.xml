@@ -3,9 +3,16 @@
 
 <!--==========1.5 Checklist==========
 
+
+TODO:
+	-Look into building that recyles resources
+
+
 COMPLETE:
 	-Create art for Terraforge
 	-Create Terraforge seed
+	-Decrease growth times of Prima pods
+	-Add Prima random pod + outcomes
 
 INCOMPLETE:
 	-Elderwood Custodian:
@@ -39,5 +46,13 @@ INCOMPLETE:
 		-Scattershot (FINISHED)
 		-Stakecaster (FINISHED)
 	-->
+
+	<!--WAY LATER ON:
+		Add a new Ideology Precept: Preferred materials
+		This allows the colony to choose three desirable materials.
+			-They can also choose "all organic" "all stony" or "all metallic"
+			-Choosing an "all" option will disable choosing individual materials.
+		The colony gets mood bonuses depending on the materials used.
+		This type can be relaxed, strong, or venerated.-->
 
 </Defs>

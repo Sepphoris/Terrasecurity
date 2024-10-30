@@ -140,7 +140,7 @@ While this tree is present, weapons and seeds will be created at the base of the
           <li>
             <weight>1</weight>
             <things>
-              <TS_Seed_PrimaApexTurret>1~3</TS_Seed_PrimaApexTurret>
+              <TS_Seed_PrimaApexTurret>1~2</TS_Seed_PrimaApexTurret>
             </things>
           </li>
           <li>
@@ -159,6 +159,12 @@ While this tree is present, weapons and seeds will be created at the base of the
             <weight>0.4</weight>
             <things>
               <TS_PerrenialRifle>1</TS_PerrenialRifle>
+            </things>
+          </li>
+          <li>
+            <weight>0.4</weight>
+            <things>
+              <TS_PerrenialSMG>1</TS_PerrenialSMG>
             </things>
           </li>
           <li>
@@ -377,7 +383,7 @@ While this tree is present, a random sap will occasionally appear at it's base. 
     <comps>
       <li Class="Terrasecurity.ThingCompProperties_CyclicThingSpawner">
         <compClass>Terrasecurity.ThingComp_CyclicThingSpawner</compClass>
-        <cycleDurationRangeTicks>400000~600000</cycleDurationRangeTicks>
+        <cycleDurationRangeTicks>900000~1200000</cycleDurationRangeTicks>
         <showNotificationWhenSpawningThings>true</showNotificationWhenSpawningThings>
         <potentialSpawnedThings>
           <li>
@@ -395,7 +401,7 @@ While this tree is present, a random sap will occasionally appear at it's base. 
           <li>
             <weight>1</weight>
             <things>
-                <TS_Sunsap>1</TS_Sunsap>
+                <TS_Brightsap>1</TS_Brightsap>
             </things>
           </li>
           <li>
@@ -413,7 +419,7 @@ While this tree is present, a random sap will occasionally appear at it's base. 
           <li>
             <weight>0.3</weight>
             <things>
-              <TS_Sunsap>2~3</TS_Sunsap>
+              <TS_Brightsap>2~3</TS_Brightsap>
             </things>
           </li>
         </potentialSpawnedThings>

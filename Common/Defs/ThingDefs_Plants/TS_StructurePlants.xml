@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="TS_FundamentalPlantBase">
+    <defName>TS_BrightsapLampPlant</defName>
+    <label>Brightlamp Sprout</label>
+    <description>A growing sprout that will shape itself into a Brightlamp. Brightlamps provide light by only using brightsap.</description>
+    <graphicData>
+      <texPath>Things/Plant/BrightsapLamp_Mature</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <plant>
+      <growDays>1.5</growDays>
+      <immatureGraphicPath>Things/Plant/BrightsapLamp_Mature</immatureGraphicPath>
+    </plant>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>0.9</glowRadius>
+        <glowColor>(238,211,77,0)</glowColor>
+      </li>
+      <li Class="Terrasecurity.ThingCompProperties_PlantTransformOnMaturity">
+        <compClass>Terrasecurity.ThingComp_PlantTransformOnMaturity</compClass>
+        <transformedThing>TS_BrightsapLamp</transformedThing>
+        <!--<transformedThingStuff>WoodLog</transformedThingStuff>-->
+      </li>
+      <li Class="CompProperties_InspectString">
+        <inspectString>Growing into: Brightlamp</inspectString>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="TS_FundamentalPlantBase">
+    <defName>TS_BrightsapColumnPlant</defName>
+    <label>Brightsap Column Sprout</label>
+    <description>A growing sprout that will shape itself into a Brightsap Column. Brightsap Columns provide light by only using brightsap, and will also hold any rooftop above it.</description>
+    <graphicData>
+      <texPath>Things/Plant/BrightsapColumn_Mature</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <plant>
+      <growDays>1.5</growDays>
+      <immatureGraphicPath>Things/Plant/BrightsapLamp_Mature</immatureGraphicPath>
+    </plant>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>0.9</glowRadius>
+        <glowColor>(238,211,77,0)</glowColor>
+      </li>
+      <li Class="Terrasecurity.ThingCompProperties_PlantTransformOnMaturity">
+        <compClass>Terrasecurity.ThingComp_PlantTransformOnMaturity</compClass>
+        <transformedThing>TS_BrightsapColumn</transformedThing>
+        <!--<transformedThingStuff>WoodLog</transformedThingStuff>-->
+      </li>
+      <li Class="CompProperties_InspectString">
+        <inspectString>Growing into: Brightsap Column</inspectString>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

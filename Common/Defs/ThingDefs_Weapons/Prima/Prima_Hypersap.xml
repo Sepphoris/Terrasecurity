@@ -7,7 +7,7 @@ At their matured form, they are given their maturity increases-->
 	<ThingDef ParentName="UpgradedHypersapTerraweapon_Single">
 		<defName>TS_PrimaShotgunHypersap</defName> <!--Rename to PrimaShotgunUpgraded in 1.5-->
 		<label>prima hyperburster</label>
-		<description>The matured form of the Prima Spreadshot, infused with the Sap of Discorder. The presence of the sap has increased it's range, projectile speed, and fire rate.</description>
+		<description>The matured form of the Prima Spreadshot, infused with Hypersap. The presence of the sap has increased it's range, projectile speed, and fire rate.</description>
 		<graphicData>
 			<texPath>Things/WeaponPrima/Hypersap/PrimaShotgunUpgraded_HS</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -83,7 +83,7 @@ At their matured form, they are given their maturity increases-->
 	<ThingDef ParentName="UpgradedHypersapTerraweapon_Single">
 		<defName>TS_PrimaSMGHypersap</defName>
 		<label>prima hypershredder</label>
-		<description>The Apex form of the Prima Pincaster, infused with the Sap of Disorder. The presence of the sap has enabled the pineshredder has increased the range, projectile speed, and fire rate.
+		<description>The Apex form of the Prima Pincaster, infused with Hypersap. The presence of the sap has enabled the pineshredder has increased the range, projectile speed, and fire rate.
 \nAdditionally, the sap has also altered the minimum and maximum projectiles. It now fires 3-7 projectiles per burst, instead of 4-5.</description>
 		<graphicData>
 			<texPath>Things/WeaponPrima/Hypersap/PrimaSMGUpgraded_HS</texPath>

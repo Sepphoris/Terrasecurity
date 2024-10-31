@@ -67,7 +67,7 @@ The outcome will always be one vial of refined sap, but which one it is will be 
         <fillableBarFilledColor>(51, 204, 217)</fillableBarFilledColor>
         <inputThings>
           <!-- needs exactly one entry -->
-          <TS_Glowsap>1</TS_Glowsap>
+          <TS_Glowsap>300</TS_Glowsap>
         </inputThings>
         <conversionDurationTicks>1200</conversionDurationTicks>
         <potentialResults>

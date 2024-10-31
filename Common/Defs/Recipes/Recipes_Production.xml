@@ -66,4 +66,115 @@
     <displayPriority>920</displayPriority>
   </RecipeDef>
 
+<!--Filter recipes-->
+  <RecipeDef>
+    <defName>TS_SapFilterBrightsapRecipe</defName>
+    <label>filter glowsap to brightsap</label>
+    <description>Produce a single jar of brightsap. Brightsap is considered a purer form of glowsap, consiting only of luminescent and growth elements while discarding everything else, and thus does not require as much glowsap.</description>
+    <jobString>filtering glowsap to brightsap.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Plants</workSkill>
+      <skillRequirements>
+        <Plants>5</Plants>
+      </skillRequirements>
+    <researchPrerequisite>TS_GlowsapRefinement</researchPrerequisite>
+    <effectWorking>Sculpt</effectWorking>
+    <soundWorking>Recipe_MakeBow</soundWorking>
+    <workAmount>4800</workAmount>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TS_Glowsap</li>
+          </thingDefs>
+        </filter>
+        <count>225</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TS_Glowsap</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TS_Brightsap>1</TS_Brightsap>
+    </products>
+    <displayPriority>900</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>TS_SapFilterEndosapRecipe</defName>
+    <label>filter glowsap to endosap</label>
+    <description>Produce a single jar of endosap. Endosap retains elements that promote hardiness and lifespan.</description>
+    <jobString>filtering glowsap to brightsap.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Plants</workSkill>
+      <skillRequirements>
+        <Plants>5</Plants>
+      </skillRequirements>
+    <researchPrerequisite>TS_GlowsapRefinement</researchPrerequisite>
+    <effectWorking>Sculpt</effectWorking>
+    <soundWorking>Recipe_MakeBow</soundWorking>
+    <workAmount>5600</workAmount>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TS_Glowsap</li>
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TS_Glowsap</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TS_Endosap>1</TS_Endosap>
+    </products>
+    <displayPriority>910</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>TS_SapFilterHypersapRecipe</defName>
+    <label>filter glowsap to hypersap</label>
+    <description>Produce a single jar of hypersap. Endosap retains elements that promotes projectile regeneration and sap pressure.</description>
+    <jobString>filtering glowsap to hypersap.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Plants</workSkill>
+      <skillRequirements>
+        <Plants>5</Plants>
+      </skillRequirements>
+    <researchPrerequisite>TS_GlowsapRefinement</researchPrerequisite>
+    <effectWorking>Sculpt</effectWorking>
+    <soundWorking>Recipe_MakeBow</soundWorking>
+    <workAmount>5600</workAmount>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TS_Glowsap</li>
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TS_Glowsap</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TS_Hypersap>1</TS_Hypersap>
+    </products>
+    <displayPriority>930</displayPriority>
+  </RecipeDef>
 </Defs>

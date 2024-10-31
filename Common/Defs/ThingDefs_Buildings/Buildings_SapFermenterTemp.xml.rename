@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Abstract="True" ParentName="BuildingBase" Name="TS_SapFilter_Base">
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>42</pathCost>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <tickerType>Rare</tickerType>
+    <rotatable>true</rotatable>
+    <uiOrder>2710</uiOrder>
+    <constructEffect>ConstructWood</constructEffect>
+    <building>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+      <destroySound>BuildingDestroyed_Wood_Small</destroySound>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="TS_SapFilter_Base">
+    <defName>TS_GlowsapFilter</defName>
+    <label>Sap Transposer</label>
+    <description>A deeply rooted basin that, when filled with glowsap, will slowly absorb most of the sap, while leaving behind various elements and nutrients that have high potential. This process returns most of the glowsap to the planet, but the filtered contents combine into special, powerful saps. These new saps can then either be used, or sold.
+A very large amount of glowsap is needed to produce a usable end result. The filtering process is slow, and requires manual oversight; however, the sap that is being filtered will be reserved in a dedicated jar if a break is needed.</description>
+    <graphicData>
+      <texPath>Things/Building/Production/Transposer/Transposer</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.6,1.6)</drawSize>
+      <drawOffset>(0,0,0)</drawOffset>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.75, 0.35, 0.33)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>10</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>3</Flammability>
+    </statBases>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <researchPrerequisites>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

@@ -147,7 +147,7 @@ Proper knowledge on the seed is required to plant it safely and effectively.
     <defName>ET_Seed_PrimaApexTurret</defName>
     <label>Prima Apex Seed</label>
     <description>A seed acquired from matured Prima weapons. Can grow into any basic Prima turret the player desires.
-The seed is awoken by hand, and at will. During the planting process, one can influence what turret the seed will grow into.
+The seed has infinite potential; during the planting process, one can influence what turret the seed will grow into, should they know the proper 'pattern' the seed will respond to.
 \n\nUnlike other Prima seeds, Apex seeds do not expire over time.</description>
     <possessionCount>4</possessionCount>
     <tickerType>Normal</tickerType>
@@ -162,7 +162,7 @@ The seed is awoken by hand, and at will. During the planting process, one can in
     <intricate>true</intricate>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
-      <MarketValue>550</MarketValue>
+      <MarketValue>150</MarketValue>
       <Mass>0.015</Mass>
       <Flammability>1</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
@@ -178,7 +178,7 @@ The seed is awoken by hand, and at will. During the planting process, one can in
       <li Class="CompProperties_Usable"> <!--REQUIRED for new seed planting!-->
                 <useJob>UseItem</useJob>
                 <useLabel>Use {0_label}</useLabel>
-                <useDuration>5</useDuration>
+                <useDuration>15</useDuration>
                 <showUseGizmo>false</showUseGizmo>
             </li>
             <li Class="Ecotech.CompProperties_UseEffecPlantSeed"> <!--Add thingDef to ET_PlantSeed workGiver!-->

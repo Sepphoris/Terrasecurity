@@ -83,6 +83,7 @@
     </requiredCapacities>
     <fixedBillGiverDefs> <!--Add seeds that allow multiple plants here-->
       <li>ET_Seed_PrimaApexTurret</li>
+      <li>ET_Seed_ConduitTreeSeed</li>
     </fixedBillGiverDefs>
     <nonColonistsCanDo>true</nonColonistsCanDo>
     <canBeDoneByMechs>false</canBeDoneByMechs>
@@ -96,8 +97,8 @@
     <priorityInType>50</priorityInType>
     <verb>perform tending</verb>
     <gerund>perform tending at</gerund>
-    <fixedBillGiverDefs>
-      <li>Plant_Linkroot</li>
+    <fixedBillGiverDefs> <!--Add plants that use Linkroot mechanics!-->
+      <li>ET_Linkroot_Aptitude</li>
     </fixedBillGiverDefs>
     <requiredCapacities>
       <li>Manipulation</li>

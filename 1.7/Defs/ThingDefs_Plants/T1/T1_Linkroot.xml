@@ -2,12 +2,12 @@
 <Defs>
 
 <ThingDef ParentName="PlantBase">
-        <defName>Plant_Linkroot</defName>
-        <label>Linkroot - the very fucking basic.</label>
-        <description>this is a description for test plant, put something here probably.</description>
+        <defName>ET_Linkroot_Aptitude</defName>
+        <label>Linkroot</label>
+        <description>Linkroot for aptitude.</description>
         <statBases>
-            <MaxHitPoints>85</MaxHitPoints>
-            <Nutrition>0.01</Nutrition>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Nutrition>0</Nutrition>
         </statBases>
         <graphicData>
             <texPath>Things/Plant/PotatoPlant</texPath>
@@ -22,39 +22,28 @@
             <sowTags />
             <fertilityMin>0.1</fertilityMin>
             <topWindExposure>0.1</topWindExposure>
-            <growDays>0.05</growDays>
-            <visualSizeRange>0.5~1.05</visualSizeRange>
+            <growDays>0.5</growDays>
+            <visualSizeRange>0.5~1</visualSizeRange>
         </plant>
         <comps>
             <li Class="CompProperties_Forbiddable">
-
             </li>
-            <li Class="Ecotech.CompProperties_LinkRoot">
+            <li Class="Ecotech.CompProperties_CountLimit">
+                <countLimit>1</countLimit>
+            </li>
+            <li Class="Ecotech.CompProperties_LinkRoot"> <!--Add plant def to workgiver!-->
                 <gizmoLabel>root linking</gizmoLabel>
                 <progressPerTick>0.1</progressPerTick>
-                <maxProgress>2500</maxProgress>
+                <maxProgress>500</maxProgress>
                 <tendIcon>Effects/SFX/Particle_Ring</tendIcon>
-                <isOnlyOneCanExist>true</isOnlyOneCanExist>
                 <linkedResearch>
                     <li>
-                        <threshold>100</threshold>
-                        <unlockedResearch>ET_BasicBiosynthVat</unlockedResearch>
-                    </li>
-                    <li>
-                        <threshold>250</threshold>
-                        <unlockedResearch>MultiAnalyzer</unlockedResearch>
-                    </li>
-                    <li>
                         <threshold>500</threshold>
-                        <unlockedResearch>Fabrication</unlockedResearch>
-                    </li>
-                    <li>
-                        <threshold>1000</threshold>
-                        <unlockedResearch>AdvancedFabrication</unlockedResearch>
+                        <unlockedResearch>ET_TierOneOrganicMastery</unlockedResearch>
                     </li>
                 </linkedResearch>
                 <forbiddenResearch>
-                    <li>ShipBasics</li>
+                    <li>Electricity</li>
                 </forbiddenResearch>
             </li>
         </comps>

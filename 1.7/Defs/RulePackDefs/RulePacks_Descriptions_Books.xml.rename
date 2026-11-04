@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Note: Built and Natural Structures were combined into Standard structures for better generation variety.-->
+
+  <RulePackDef>
+    <defName>ET_DescriptionSapBook</defName>
+    <include>
+      <li>ET_NamerOrganicUtility</li>
+    </include>
+    <rulePack>
+    <rulesFiles>
+      <li>FileET_BookSapsBasic->Words/ET_BookSapsBasic</li>
+      <li>FileET_BookSapsMeta->Words/ET_BookSapsMeta</li>
+      <li>FileET_BookSapsProto->Words/ET_BookSapsProto</li>
+    </rulesFiles>
+      <rulesStrings>
+        <li>subject_intro->This book details exactly how terrasaps are used. [ET_BookSapBasic] and [ET_BookSapsMeta] is mentioned quite frequently, but the book covers most everything clearly.
+Terrasaps are generally used for mutating terratech plants or weapons, and give them different attributes. The harder the terrasap is to obtain, the stronger the mutation will be. What effect the sap applies is detailed on it's information page.
+To modify a weapon, you will have to use a Terravat. Terravats are researched, and then grown via seed. You then insert the desired weapon and sap into the terravat.
+Many terratech plants can be mutated as well, before they reach 100% maturity. As long as you have a compatible sap, you can right-click a plant (such as a weapon-producing prima pod), and have a colonist mutate the plant. This will change what the plant will grow into, and will also
+be much more efficient than a terravat, as it's require just one terrasap.
+You can tell how prone to mutation a plant or weapon is by a "Mutation Potential" tag. Stronger saps require higher potential; if it's high or extreme, it'll accept most or all saps. However, if it's low, it'll only accept the most basic saps.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

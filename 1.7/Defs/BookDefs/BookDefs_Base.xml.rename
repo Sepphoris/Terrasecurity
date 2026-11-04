@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BookBase">
+    <defName>ET_BookSap</defName>
+    <label>terrasap guide</label>
+    <description>A book explaining the workings of how terrasaps work. Very important to new terratech tribes.</description>
+    <graphicData>
+      <texPath>Things/Item/Book/Novel/Novel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Item/Book/Novel/Novel</uiIconPath>
+    <statBases>
+      <MarketValue>10</MarketValue>
+    </statBases>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Book">
+        <nameMaker>ET_NamerSapBook</nameMaker>
+        <descriptionMaker>ET_DescriptionSapBook</descriptionMaker>
+        <ageYearsRange>1000~4000</ageYearsRange>
+        <openGraphic>
+          <texPath>Things/Item/Book/Novel/Novel_Open</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.7</drawSize>
+        </openGraphic>
+        <verticalGraphic>
+          <texPath>Things/Item/Book/Novel/Novel_Vertical</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <addTopAltitudeBias>true</addTopAltitudeBias>
+        </verticalGraphic>
+        <doers>
+          <li Class="BookOutcomeProperties_JoyFactorModifier" />
+          <li Class="BookOutcomeProperties_GiveQuest">
+            <questChance>0</questChance>
+          </li>
+        </doers>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

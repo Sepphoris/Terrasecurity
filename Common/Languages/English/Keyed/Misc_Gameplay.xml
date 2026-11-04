@@ -5,5 +5,23 @@
   <Linkroot_ThresholdReached>Research Finished: {0}</Linkroot_ThresholdReached>
   <LinkRoot_UnableToLinkReason>Linking Denied: {0}</LinkRoot_UnableToLinkReason>
   <Linkroot_ChooseRootType>Chosen plant</Linkroot_ChooseRootType>
-  <Linkroot_ChooseRootTypeDesc>Choose what plant will be sown</Linkroot_ChooseRootTypeDesc>
+  <Linkroot_ChooseRootTypeDesc>Choose desired plant</Linkroot_ChooseRootTypeDesc>
+  <Linkroot_ThresholdReached>Research Finished: {0}</Linkroot_ThresholdReached>
+  <Linkroot_ChooseRootType>Choose Root-type</Linkroot_ChooseRootType>
+  <Linkroot_ChooseRootTypeDesc>Choose Root-type</Linkroot_ChooseRootTypeDesc>
+  <Linkroot_ToggleAutomaticTendingLabel>Toggle auto tending</Linkroot_ToggleAutomaticTendingLabel>
+  <!-- {0} is targetProgress, {1} is on/off status -->
+  <Linkroot_ToggleAutomaticTendingDesc>{0} {1}</Linkroot_ToggleAutomaticTendingDesc>
+  <LinkRoot_UnableToLinkReason_TechLevelLimitReached>Cannot tend to: {0} tech level is higher than {1}</LinkRoot_UnableToLinkReason_TechLevelLimitReached>
+  <LinkRoot_UnableToLinkReason_FactionHostile>Cannot tend to: {0} is hostile, preventing knowledge linking</LinkRoot_UnableToLinkReason_FactionHostile>
+  <LinkRoot_UnableToLinkReason_CountLimit>Cannot tend to: only one {0} can exist at a time</LinkRoot_UnableToLinkReason_CountLimit>
+  <LinkRoot_UnableToLinkReason_GrowthUnmet>Cannot tend to: plant must be fully grown</LinkRoot_UnableToLinkReason_GrowthUnmet>
+  <LinkRoot_UnableToLinkReason_ForbiddenByPlayer>Cannot tend to: This plant is forbidden</LinkRoot_UnableToLinkReason_ForbiddenByPlayer>
+  <LinkRoot_UnableToLinkReason_TargetProgressReached>Cannot tend to: target tending progress reached</LinkRoot_UnableToLinkReason_TargetProgressReached>
+  <LinkRoot_UnableToLinkReason_TendingDisallowed>Cannot tend to: tending disallowed</LinkRoot_UnableToLinkReason_TendingDisallowed>
+  <LinkRoot_UnableToLinkReason_ForbiddenResearchFinished>Cannot tend to: {0} has been researched</LinkRoot_UnableToLinkReason_ForbiddenResearchFinished>
+  <LinkRoot_UnableToLinkReason_PrerequisitesNotCompleted>Cannot tend to: {0} prerequisites not completed</LinkRoot_UnableToLinkReason_PrerequisitesNotCompleted>
+  <LinkRoot_UnableToLinkReason_MaxProgressReached>Cannot tend to: this plant has reach it limit</LinkRoot_UnableToLinkReason_MaxProgressReached>
+  <!-- this only show up on right click menu -->
+  <LinkRoot_UnableToLinkReason_PlantSkillTooLow>Cannot tend to: requires plants skill {1}</LinkRoot_UnableToLinkReason_PlantSkillTooLow>
 </LanguageData>

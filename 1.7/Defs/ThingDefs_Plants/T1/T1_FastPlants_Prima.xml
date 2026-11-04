@@ -24,6 +24,63 @@ Tier 4 surge seeds: 20
 -->
 
 
+<!--APEX SEEDS: doesn't expire, grows faster, and allows free choice of what turret to choose.-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ET_Seed_PrimaHyperpod</defName>
+    <label>prima hyperpod seed</label>
+    <description>An ancient seed that's only given out under very specific circumstances. Able to grow into any baseline Prima weapon.
+The seed has infinite potential; during the planting process, one can influence what the seed will grow into, should they know the proper 'pattern' the seed will respond to.
+\n\nUnlike other Prima seeds, this seed will not expire over time.</description>
+    <possessionCount>4</possessionCount>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Resource/PrimaSeeds/ApexSeed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>0.3</drawSize>
+    </graphicData>
+    <stackLimit>8</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <intricate>true</intricate>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>200</MarketValue>
+      <Mass>0.015</Mass>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>TerraseedsPrimaWeapons</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>0.9</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Usable"> <!--REQUIRED for new seed planting!-->
+                <useJob>UseItem</useJob>
+                <useLabel>Use {0_label}</useLabel>
+                <useDuration>15</useDuration>
+                <showUseGizmo>false</showUseGizmo>
+            </li>
+            <li Class="Ecotech.CompProperties_UseEffecPlantSeed"> <!--Add thingDef to ET_PlantSeed workGiver!-->
+              <plantDefs>
+                <li>ET_HyperPrimaPod_Random</li>
+                <li>ET_HyperPrimaPod_Warrior</li>
+                <li>ET_HyperPrimaPod_Skirmisher</li>
+                <li>ET_HyperPrimaPod_Ranger</li>
+              </plantDefs>
+              <jobDef>ET_ReplantSeed</jobDef>
+            </li>
+    </comps>
+    <tradeTags Inherit='false'>
+      <li>ET_PrimaTurretSeedTag</li>
+    </tradeTags>
+    <allowedArchonexusCount>2</allowedArchonexusCount>
+  </ThingDef>
+
+
 <!--Hyperseed: Pure terrapod-->
 
   <ThingDef ParentName="ET_PrimaWeaponPodBase">

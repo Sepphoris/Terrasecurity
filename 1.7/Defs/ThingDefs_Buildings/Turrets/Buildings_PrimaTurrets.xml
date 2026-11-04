@@ -148,9 +148,9 @@ ROGUESAP: DROPS A RANDOM TURRET SEED EVERY 30 DAYS
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
-    <researchPrerequisites>
+    <!--<researchPrerequisites>
       <li>ET_PrimaTurretTerraseeds</li>
-    </researchPrerequisites>
+    </researchPrerequisites>-->
     <modExtensions>
 			<!--<li Class="HeavyWeapons.HeavyWeapon">
 				<weaponHitPointsDeductionOnShot>2</weaponHitPointsDeductionOnShot>
@@ -288,9 +288,9 @@ ROGUESAP: DROPS A RANDOM TURRET SEED EVERY 30 DAYS
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
-    <researchPrerequisites>
+    <!--<researchPrerequisites>
       <li>ET_PrimaTurretTerraseeds</li>
-    </researchPrerequisites>
+    </researchPrerequisites>-->
   </ThingDef>
 
 <!--Thistle Microturret Gun-->
@@ -425,9 +425,9 @@ ROGUESAP: DROPS A RANDOM TURRET SEED EVERY 30 DAYS
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
-    <researchPrerequisites>
+    <!--<researchPrerequisites>
       <li>ET_PrimaTurretTerraseeds</li>
-    </researchPrerequisites>
+    </researchPrerequisites>-->
   </ThingDef>
 
 <!--Scatter Microturret Gun-->

@@ -17,9 +17,12 @@
     <selectable>true</selectable>
     <pathCost>14</pathCost>
     <maxTechLevelToBuild>Ultra</maxTechLevelToBuild>
+    <researchPrerequisites>
+        <li>ET_PrimaTurretTerraseeds</li>
+      </researchPrerequisites>
     <plant>
       <maxMeshCount>1</maxMeshCount>
-      <growDays>0.5</growDays> 
+      <growDays>1</growDays> 
       <fertilityMin>0.5</fertilityMin>
       <fertilitySensitivity>0.1</fertilitySensitivity>
       <growMinGlow>0</growMinGlow>
@@ -53,7 +56,7 @@
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <plant>
-      <growDays>0.5</growDays> 
+      <growDays>1</growDays> 
     </plant>
     <comps>
       <li Class="Ecotech.ThingCompProperties_PlantTransformOnMaturity">
@@ -77,7 +80,7 @@
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <plant>
-      <growDays>0.5</growDays>
+      <growDays>1</growDays>
       <immatureGraphicPath>Things/Plant/PrimaTurret/SpearTurret_Immature</immatureGraphicPath>
     </plant>
     <comps>
@@ -86,8 +89,8 @@
         <transformedThing>ET_PrimaTurret_Spear</transformedThing>
         <!--<transformedThingStuff>WoodLog</transformedThingStuff>-->
       </li>
-    <li Class="CompProperties_InspectString">
-      <inspectString>Inactive until fully grown</inspectString>
+      <li Class="CompProperties_InspectString">
+        <inspectString>Inactive until fully grown</inspectString>
       </li>
     </comps>
   </ThingDef>
@@ -98,11 +101,11 @@
     <description>A sprout planted from a surge seed. Quick to mature, but requires ample room during it's growth period.
 \nOnce fully grown, this particular sprout will turn into a fully organic sentry that fires a volley of painful, needle-thin spines.</description>
     <graphicData>
-      <texPath>Things/Plant/PrimaTurret/SpearTurret</texPath>
+      <texPath>Things/Plant/PrimaTurret/SMGTurret</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <plant>
-      <growDays>0.5</growDays>
+      <growDays>1</growDays>
       <immatureGraphicPath>Things/Plant/PrimaTurret/SpearTurret_Immature</immatureGraphicPath>
     </plant>
     <comps>

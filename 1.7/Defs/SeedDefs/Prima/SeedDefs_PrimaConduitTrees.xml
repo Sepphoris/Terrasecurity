@@ -1,6 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!--===MASTER TREE SEED===-->
+
+<ThingDef ParentName="ResourceBase">
+    <defName>ET_Seed_ConduitTreeSeed</defName>
+    <label>Conduit Tree Seed</label>
+    <description>A seed that can grow into several types of powerful trees. These trees are essential for any Terratech colony to thrive.
+The player can freely choose what type of conduit tree this seed can grow into; however, only one of each conduit tree can exist at a time.
+\n\nUnlike most other seeds, Conduit Tree Seeds will not expire over time.</description>
+    <possessionCount>4</possessionCount>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Resource/MiscSeeds/ChannelingSeed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>0.3</drawSize>
+    </graphicData>
+    <stackLimit>4</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <intricate>true</intricate>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>200</MarketValue>
+      <Mass>0.015</Mass>
+      <Flammability>1</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>TerraseedsPrimaWeapons</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>0.9</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Usable"> <!--REQUIRED for new seed planting!-->
+                <useJob>UseItem</useJob>
+                <useLabel>Use {0_label}</useLabel>
+                <useDuration>10</useDuration>
+                <showUseGizmo>false</showUseGizmo>
+            </li>
+            <li Class="Ecotech.CompProperties_UseEffecPlantSeed"> <!--Add thingDef to ET_PlantSeed workGiver!-->
+              <plantDefs>
+                <li>ET_BuildingTreeTierOne</li>
+                <li>ET_SentinelTreeTierOne</li>
+                <li>ET_SapTreeTierOne</li>
+              </plantDefs>
+              <jobDef>ET_ReplantSeed</jobDef>
+            </li>
+    </comps>
+    <tradeTags Inherit='false'>
+      <li>ET_PrimaStructureSeed</li>
+    </tradeTags>
+    <allowedArchonexusCount>2</allowedArchonexusCount>
+  </ThingDef>
+
+<!--==========-->
+
   <ThingDef ParentName="ResourceBase">
     <defName>ET_Seed_BuildingTreeTierOne</defName>
     <label>Primwood Custodian Seed</label>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Note: Built and Natural Structures were combined into Standard structures for better generation variety.-->
+
+  <RulePackDef>
+    <defName>ET_NamerSapBook</defName>
+    <include>
+      <li>ET_NamerOrganicUtility</li>
+    </include>
+    <rulePack>
+    <rulesFiles>
+        <li>FileET_BookEditions->Words/ET_BookEditions</li>
+        <li>FileET_BookVolumes->Words/ET_BookVolumes</li>
+        <li>FileET_BookDictionaries->Words/ET_BookDictionaries</li>
+      </rulesFiles>
+      <rulesStrings>
+        <li>r_name->[ET_PrefixesOrganic][ET_AffixesOrganic]'s guide to Terrasaps [ET_BookVolumes]</li>
+        <li>r_name->The Terrasap [ET_BookDictionaries] [ET_BookEdition]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

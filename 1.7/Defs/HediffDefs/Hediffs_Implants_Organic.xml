@@ -1,20 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+<!--===== Terrameld Oculus =====-->
+
 	<HediffDef>
-		<defName>ET_NutrientRootsHediff</defName>
+		<defName>ET_TerrameldEyeHediff</defName>
 		<hediffClass>Hediff</hediffClass>
-		<label>nutrient roots</label>
-		<labelNoun>nutrient roots</labelNoun>
+		<label>terrameld oculus</label>
+		<labelNoun>terrameld oculi</labelNoun>
 		<defaultLabelColor>(178,102,255)</defaultLabelColor>
-		<description>Microgrowths that are located at the bottom of the feet. These growths pierce the terrain and quickly absorb nutrients found within it, lowering hunger rate. Unfortunately, it also lowers movement speed.
-The roots can be made larger and more effective, but keep in mind that movement speed is impacted as well.</description>
-		<initialSeverity>0.3</initialSeverity>
+		<description>A collection of organic bioreceptors that allow the user to see the world in an entirely different perspective. It effectively blinds the persons to most everything that wouldn't be important to a plant - which is to say, anything outside a certain radius.
+That said, anything within that radius would be in incredibly sharp focus, far higher than any normal eye could possibly achieve. Lack of visual 'noise' makes anything requiring detail and finesse extremely precise.</description>
+		<initialSeverity>0.1</initialSeverity>
 		<stages>
 			<li>
+        <minSeverity>0.1</minSeverity>
+        <label>greensight</label>
+				<partEfficiencyOffset>-0.7</partEfficiencyOffset>
+        <statOffsets>
+          <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+          <AimingDelayFactor>-0.5</AimingDelayFactor>
+          <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+          <MeleeHitChance>1</MeleeHitChance>
+          <MeleeDodgeChance>1</MeleeDodgeChance>
+          <MoveSpeed>0.5</MoveSpeed>
+        </statOffsets>
+			</li>
+      <li>
         <minSeverity>0.3</minSeverity>
-        <label>I</label>
-				<hungerRateFactorOffset>-0.5</hungerRateFactorOffset>
+        <label>II</label>
+				<hungerRateFactorOffset>-0.2</hungerRateFactorOffset>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>III</label>
+				<hungerRateFactorOffset>-0.3</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -22,35 +49,145 @@ The roots can be made larger and more effective, but keep in mind that movement 
 					</li>
 				</capMods>
 			</li>
+		</stages>
+	</HediffDef>
+
+<ThingDef ParentName="ET_BodyPartOrganicBase">
+    <defName>ET_NutrientRoots</defName>
+    <label>nutrient microroots</label>
+    <description>A family of growable, extruding roots that allows the host to passively 'feed' off nutrients and minerals in the earth. Requires an entire leg to properly maintain.</description>
+    <descriptionHyperlinks>
+		<RecipeDef>ET_InstallNutrientRoots</RecipeDef>
+	</descriptionHyperlinks>
+    <statBases>
+      <Mass>0.2</Mass>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>ET_InstallNutrientRoots</defName>
+    <label>growing nutrient microroots</label>
+    <description>Grow nutrient microroots.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ET_NutrientRoots</ThingDef>
+      <HediffDef>ET_NutrientRoots</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Growing nutrient microroots.</jobString>
+    <surgeryOutcomeEffect IsNull="True" />
+    <ingredients>
       <li>
-        <minSeverity>0.6</minSeverity>
+        <filter>
+          <thingDefs>
+            <li>ET_NutrientRoots</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ET_NutrientRoots</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ET_NutrientRootsHediff</addsHediff>
+  </RecipeDef>
+
+
+
+<!--===== Nutrient Microroots =====-->
+
+	<HediffDef>
+		<defName>ET_NutrientRootsHediff</defName>
+		<hediffClass>Hediff</hediffClass>
+		<label>nutrient microroots</label>
+		<labelNoun>nutrient microroots</labelNoun>
+		<defaultLabelColor>(178,102,255)</defaultLabelColor>
+		<description>Hundreds of growths protruding from the bottom of the feet. These growths pierce the terrain and quickly absorb nutrients found within it, lowering hunger rate. Unfortunately, it also lowers movement speed.
+The roots can be made larger and more effective, but keep in mind that movement speed is impacted as well.</description>
+		<initialSeverity>0.1</initialSeverity>
+		<stages>
+			<li>
+        <minSeverity>0.1</minSeverity>
+        <label>I</label>
+				<hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
+			</li>
+      <li>
+        <minSeverity>0.3</minSeverity>
         <label>II</label>
-				<hungerRateFactorOffset>-0.7</hungerRateFactorOffset>
+				<hungerRateFactorOffset>-0.2</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>-0.4</offset>
+						<offset>-0.1</offset>
 					</li>
 				</capMods>
 			</li>
       <li>
-        <minSeverity>0.9</minSeverity>
+        <minSeverity>0.6</minSeverity>
         <label>III</label>
-				<hungerRateFactorOffset>-0.9</hungerRateFactorOffset>
+				<hungerRateFactorOffset>-0.3</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>-0.6</offset>
+						<offset>-0.2</offset>
 					</li>
 				</capMods>
 			</li>
 		</stages>
 	</HediffDef>
 
+<ThingDef ParentName="ET_BodyPartOrganicBase">
+    <defName>ET_NutrientRoots</defName>
+    <label>nutrient microroots</label>
+    <description>A family of growable, extruding roots that allows the host to passively 'feed' off nutrients and minerals in the earth. Requires an entire leg to properly maintain.</description>
+    <descriptionHyperlinks>
+		<RecipeDef>ET_InstallNutrientRoots</RecipeDef>
+	</descriptionHyperlinks>
+    <statBases>
+      <Mass>0.2</Mass>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>ET_InstallNutrientRoots</defName>
+    <label>growing nutrient microroots</label>
+    <description>Grow nutrient microroots.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ET_NutrientRoots</ThingDef>
+      <HediffDef>ET_NutrientRoots</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Growing nutrient microroots.</jobString>
+    <surgeryOutcomeEffect IsNull="True" />
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ET_NutrientRoots</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ET_NutrientRoots</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ET_NutrientRootsHediff</addsHediff>
+  </RecipeDef>
+
 <!--===== Deeproot Linkspine =====-->
 
-<!--<HediffDef ParentName="ImplantHediffBase">
-    <defName>ET_DeeprootLinkspine</defName>
+<HediffDef ParentName="ImplantHediffBase">
+    <defName>ET_DeeprootLinkspineHediff</defName>
     <label>deeproot linkspine</label>
     <description>A spine that connects the host deep into to the earth via a network of roots and nerves. Heightens reflexes, mental awareness, and coordination. However, it can cause personality disassociation breaks at multiple levels.</description>
     <addedPartProps>
@@ -92,7 +229,7 @@ The roots can be made larger and more effective, but keep in mind that movement 
   <ThingDef ParentName="ET_BodyPartOrganicBase">
     <defName>ET_DeeprootLinkspine</defName>
     <label>deeproot linkspine</label>
-    <description>An organic spine that connects the host deep into to the earth via a network of roots and nerves. With the spine serving as the linkroot hub, the host's entire body is also linked, allowing higher reflexes, mental awareness, and coordination. However, linking to a psuedo-hivemind so deeply has risks, and can cause personality disassociation at multiple levels.</description>
+    <description>An organic spine that connects the host to the linkroot network, and thus all of terratech. The host's entire body is connected, allowing higher reflexes, mental awareness, and coordination. However, linking to a psuedo-hivemind so deeply has risks, and can cause personality disassociation at multiple levels.</description>
     <descriptionHyperlinks>
 		<RecipeDef>ET_InstallDeeprootLinkspine</RecipeDef>
 	</descriptionHyperlinks>
@@ -130,7 +267,7 @@ The roots can be made larger and more effective, but keep in mind that movement 
     <appliedOnFixedBodyParts>
       <li>Spine</li>
     </appliedOnFixedBodyParts>
-    <addsHediff>ET_DeeprootLinkspine</addsHediff>
-  </RecipeDef>-->
+    <addsHediff>ET_DeeprootLinkspineHediff</addsHediff>
+  </RecipeDef>
 
 </Defs>

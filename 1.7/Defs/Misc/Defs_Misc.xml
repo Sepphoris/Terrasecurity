@@ -211,43 +211,6 @@
     </stages>
   </ThoughtDef>
 
-  <ConceptDef ParentName="NotedOpportunisticBase">
-    <defName>ET_HowToMutatePlants</defName>
-    <label>EcoTech: Mutating Plants</label>
-    <opportunityDecays>false</opportunityDecays>
-    <helpText>You can mutate specific Terratech plants by using terrasaps. Mutating plants causes them to produce different results when they finish growing!
-\nWhile the plant is growing, use the "Infuse" sap option to mutate the plant. Each sap infusion is unique, so experiment!</helpText>
-    <highlightTags>
-      <li>GrowingZoneSetPlant</li>
-    </highlightTags>
-  </ConceptDef>
-
-  <ConceptDef ParentName="NotedOpportunisticBase">
-    <defName>ET_HowToUseTerrasaps</defName>
-    <label>EcoTech: Terrasaps</label>
-    <opportunityDecays>false</opportunityDecays>
-    <helpText>Terrasaps are a key aspect of EcoTech. Several types exist, with different effects, rarities, and importance depending on the terratech path you're progressing.
-Generally you'll have easy access to basic saps, such as glowsap or shocksap, but as you progress you can acquire stronger saps. These stronger saps can be used to mutating organic weapons and plants, evolving lithic items, catalyzing powerful structures, further refinement, and so on.
-Every terrasap has a unique effect and varying potency. Both are noted in a terrasap's description, so be sure to check each one!</helpText>
-    <highlightTags>
-      <li>GrowingZoneSetPlant</li>
-    </highlightTags>
-  </ConceptDef>
-
-  <ConceptDef ParentName="NotedOpportunisticBase">
-    <defName>ET_MutationPotentialHelp</defName>
-    <label>EcoTech: Mutation Potential</label>
-    <opportunityDecays>false</opportunityDecays>
-    <helpText>Various organic terratech creations have different mutation potentials. Which can be summarized as follows:
-  \nBOUNDLESS: Capable of undergoing mutation at the atomic level (total transformation, resulting in a new creation entirely).
-  \nHIGH: Capable of undergoing mutation at the cellular level (selectively adding or removing biofunctions).
-  \nMEDIUM: Capable of mutations affecting it's current biological functions (rewriting biofunctions).
-  \nLOW: Capable of basic mutation (enforcing existing biofunctions - negative and positive).
-  \nNONE: Incapable of mutation.
-  \nERRATIC: Results that can end up being anything, or don't fall into the other categories.
-  \nThe higher the potential, the stronger of a terrasap you can apply.</helpText>
-  </ConceptDef>
-
   <!--<ThingDef Abstract="True" ParentName="BuildingBase" Name="ET_MuseumDisplayBase">
     <label>Display Case</label>
     <thingClass>Building</thingClass>

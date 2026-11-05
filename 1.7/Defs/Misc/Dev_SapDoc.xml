@@ -29,25 +29,30 @@ BASIC SAPS (Mutability: Low):
 	-Endosap
 	-Hypersap
 	-Deepsap
+  -Shocksap
 
 PROTOSAPS (Mutability: Medium):
 	-Toxsap
 	-Brightsap
-	-Shocksap
+	-Roguesap
+  -Bloomsap
 
 METASAPS (Mutability: High):
-	-Roguesap
 	-Ectosap
 	-Chronosap
+  -Embersap
+  -Cryosap
+  -Arcsap
 
 -NOBLESAPS (Mutability: Very High - rename to Extreme) :
-	-Embersap
-	-Cryosap
-	-Arcsap
-
--ARCHSAPS (Mutability: Extreme - rename to Boundless):
 	-Sunsap
 	-Starsap
+
+-ARCHSAPS (Mutability: Extreme - rename to Boundless):
+	-Sap of Sentries
+  -Sap of Purging
+  -Sap of Clarity
+  -Sap of Abundance
 
 ==========
 
